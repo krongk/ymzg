@@ -45,7 +45,7 @@ class EventsController < AuthController
 
   def update
     respond_to do |format|
-      if @event.update(params.require(:event).permit(:title, :description, :event_date))
+      if @event.update(params.require(:event).permit(:title, :description, :image, :location, :event_date, :event_url))
         format.html {redirect_to event_path(@event), notice:"Event update success."}
       else
         format.html { redirect_to edit_event_path, notice: "Update error!" }
