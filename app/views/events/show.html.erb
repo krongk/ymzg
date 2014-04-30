@@ -13,7 +13,7 @@
     	      <br/>
            <%= image_tag @event.image.url, :class=>"event-full-image" %>
             <div id="event-show-description">
-            	<%= @event.description %>
+            	<%=raw @event.description %>
             </div>
         </div>
 
