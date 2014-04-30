@@ -5,10 +5,10 @@ base: &base
   wait_timeout: 600
   pool: 25
   username: root
-  password: kenrome001
+  password: pwssord
   host: localhost
   port: 3306
-  database: ymzg
+  database: database_name
 
 development:
   <<: *base
